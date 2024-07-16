@@ -39,13 +39,13 @@ export const useOidc = (configurationName = defaultConfigurationName) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [configurationName]);
 
-    const login = (callbackPath:string | undefined = undefined, extras:StringMap = null, silentLoginOnly = false) => {
+    const login = (callbackPath:string | undefined = undefined, extras:StringMap| undefined = undefined, silentLoginOnly = false) => {
         return getOidc(configurationName).loginAsync(callbackPath, extras, false, undefined, silentLoginOnly);
     };
-    const logout = (callbackPath: string | null | undefined = undefined, extras:StringMap = null) => {
+    const logout = (callbackPath: string | null | undefined = undefined, extras:StringMap| undefined = undefined) => {
         return getOidc(configurationName).logoutAsync(callbackPath, extras);
     };
-    const renewTokens = async (extras: StringMap = null) : Promise<OidcAccessToken | OidcIdToken> => {
+    const renewTokens = async (extras: StringMap| undefined = undefined) : Promise<OidcAccessToken | OidcIdToken> => {
         const tokens = await getOidc(configurationName).renewTokensAsync(extras);
 
         return {
