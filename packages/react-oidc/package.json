@@ -40,8 +40,8 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@axa-fr/oidc-client-service-worker": "workspace:*",
-    "@axa-fr/oidc-client": "workspace:*"
+    "@axa-fr/oidc-client-service-worker": "7.22.17",
+    "@axa-fr/oidc-client": "7.22.17"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
