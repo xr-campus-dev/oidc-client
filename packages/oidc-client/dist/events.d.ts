@@ -1,0 +1,31 @@
+export declare const eventNames: {
+    service_worker_not_supported_by_browser: string;
+    token_aquired: string;
+    logout_from_another_tab: string;
+    logout_from_same_tab: string;
+    token_renewed: string;
+    token_timer: string;
+    loginAsync_begin: string;
+    loginAsync_error: string;
+    loginCallbackAsync_begin: string;
+    loginCallbackAsync_end: string;
+    loginCallbackAsync_error: string;
+    refreshTokensAsync_begin: string;
+    refreshTokensAsync: string;
+    refreshTokensAsync_end: string;
+    refreshTokensAsync_error: string;
+    refreshTokensAsync_silent_error: string;
+    tryKeepExistingSessionAsync_begin: string;
+    tryKeepExistingSessionAsync_end: string;
+    tryKeepExistingSessionAsync_error: string;
+    silentLoginAsync_begin: string;
+    silentLoginAsync: string;
+    silentLoginAsync_end: string;
+    silentLoginAsync_error: string;
+    syncTokensAsync_begin: string;
+    syncTokensAsync_lock_not_available: string;
+    syncTokensAsync_end: string;
+    syncTokensAsync_error: string;
+    tokensInvalidAndWaitingActionsToRefresh: string;
+};
+//# sourceMappingURL=events.d.ts.map

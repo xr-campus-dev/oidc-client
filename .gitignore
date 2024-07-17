@@ -14,7 +14,7 @@ jspm_packages/
 /node_modules
 /coverage
 **/*/LICENSE
-dist
+#dist
 .cache
 .npmrc
 examples/**/build/
